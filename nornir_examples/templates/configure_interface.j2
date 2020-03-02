@@ -1,0 +1,7 @@
+interface {{ conf.intf_id }}
+ip address {{ conf.ip_addr }} {{ conf.netmask }}
+{% if conf.description is defined %}
+description {{ conf.description }}
+{% endif %}
+no shutdown
+end
